@@ -1,9 +1,6 @@
 name: Lint Code Base
 on:
   push:
-    branches:
-      - main
-      - develop
 
 jobs:
   build:
@@ -18,7 +15,6 @@ jobs:
         uses: github/super-linter@v3
         env:
           VALIDATE_PHP: true
-          VALIDATE_MARKDOWN: true
           VALIDATE_CSS: true
           VALIDATE_HTML: true
           DEFAULT_BRANCH: develop
