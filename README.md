@@ -25,3 +25,9 @@ Now run docker-compose up, your container should now be running in that terminal
 On your web browser, go to localhost and you are now successfully on our WordPress website with a database connected.
 
 if you would like to stop the website and database containers, simply press ctrl+c in the terminal window.
+
+## Web Hosting
+Both our test and production websites are running on a virtual enviroments hosted by Amazon Web Services. We decided on AWS as it is the industry standard and all team members had good experience using that hosting platform. Both sites can be found at the following links:
+
+**TEST HOST** - http://ec2-13-59-80-168.us-east-2.compute.amazonaws.com/
+**PRODUCTION HOST** - http://ec2-3-143-210-183.us-east-2.compute.amazonaws.com/
