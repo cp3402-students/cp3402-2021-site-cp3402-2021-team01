@@ -1,7 +1,5 @@
 # Team 01
 
-# Team 01
-
 
 # Local Development Environment
 
@@ -29,5 +27,5 @@ if you would like to stop the website and database containers, simply press ctrl
 ## Web Hosting
 Both our test and production websites are running on a virtual enviroments hosted by Amazon Web Services. We decided on AWS as it is the industry standard and all team members had good experience using that hosting platform. Both sites can be found at the following links:
 
-**TEST HOST** - http://ec2-13-59-80-168.us-east-2.compute.amazonaws.com/
+**TEST HOST** - http://ec2-13-59-80-168.us-east-2.compute.amazonaws.com/  
 **PRODUCTION HOST** - http://ec2-3-143-210-183.us-east-2.compute.amazonaws.com/
