@@ -1,4 +1,6 @@
-# ignore all kind of files
-*
+.idea
+*.iml
+db
 
-!wordpress/wp-admin
+wordpress/*
+!wordpress/wp-content
