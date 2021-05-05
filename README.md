@@ -31,6 +31,7 @@ Both our test and production websites are running on a virtual environments host
 
 ## WP-Migrate DB
 If you wish to migrate any content changes you have made in local to test or prod, follow the steps below.
+
 	1. Head to the plugins tab in WP-Admin and ensure that WP-Migrate DB is enabled.
 	2. Head to the tools tab in WP-Admin and select 'Migrate DB'.
 	3. Press 'New Migration' and in the next window select 'Export Database'.
