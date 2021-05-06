@@ -25,8 +25,17 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'jazzclubteam01' ); ?></a>
 
-	<header id="masthead" class="site-header">
+
+
+	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
+            <?php if ( get_header_image() ) : ?>
+                <figure class="header-image">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                        <img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+                    </a>
+                </figure><!-- .header-image -->
+            <?php endif; // End header image check. ?>
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :

@@ -23,9 +23,9 @@ function jazzclubteam01_custom_header_setup() {
 			'jazzclubteam01_custom_header_args',
 			array(
 				'default-image'      => '',
-				'default-text-color' => '000000',
-				'width'              => 1000,
-				'height'             => 250,
+				'default-text-color' => 'ffffff',
+				'width'              => 150,
+				'height'             => 150,
 				'flex-height'        => true,
 				'wp-head-callback'   => 'jazzclubteam01_header_style',
 			)
