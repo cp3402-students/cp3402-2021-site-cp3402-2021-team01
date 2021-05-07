@@ -29,7 +29,7 @@ Both our test and production websites are running on a virtual environments host
 **TEST HOST** - http://ec2-13-59-80-168.us-east-2.compute.amazonaws.com/  
 **PRODUCTION HOST** - http://ec2-3-143-210-183.us-east-2.compute.amazonaws.com/
 
-## WP-Migrate DB
+## All-In-One WP Migration
 If you wish to migrate any content changes you have made in local to test or prod, follow the steps below.
 
 #### We recommend backing up your database prior to importing any new changes. You can backup your database by going to phpmyadmin, selecting the wordpress database on the left and then selecting 'export' in the top toolbar. Do not change any settings, instead select the go button at the bottom. If you make a mistake in the steps below, you can import that backup by going to import tab and importing the backup file.
