@@ -32,7 +32,7 @@ Both our test and production websites are running on a virtual environments host
 ## WP-Migrate DB
 If you wish to migrate any content changes you have made in local to test or prod, follow the steps below.
 
-# We recommend backing up your database prior to importing any new changes. You can backup a database by following steps 1,3 and 4.
+#### We recommend backing up your database prior to importing any new changes. You can backup your database by going to phpmyadmin, selecting the wordpress database on the left and then selecting 'export' in the top toolbar. Do not change any settings, instead select the go button at the bottom. If you make a mistake in the steps below, you can import that backup by going to import tab and importing the backup file.
  
 1. Select 'All-In-One WP Migration' in the left toolbar on wp-admin, from there select 'Export'.
 
