@@ -1,0 +1,31 @@
+name: Create / update pull request
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  CreateOrUpdatePullRequest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: main
+        env:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Preparing to create Pull Request
+        run: |
+          git fetch origin develop:develop
+          git reset --hard develop
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@ed00d4629c1bfff17f359aaa73b6160ed59c2a94
+        with:
+          branch: develop
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          draft: true
+          body: |
+            Automated pull request created by GitHub Actions.
+          title: 'develop -> master'
+          labels: |
+            automated pr

@@ -1,0 +1,6 @@
+.idea
+*.iml
+db
+
+wordpress/*
+!wordpress/wp-content
