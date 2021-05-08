@@ -22,7 +22,7 @@ services:
     ports:
       - '80:80'
     volumes:
-      - "./wordpress:/var/www/html"
+      - "./:/var/www/html"
     environment:
       WORDPRESS_DB_HOST: 'db:3306'
       WORDPRESS_DB_USER: wordpress_user
