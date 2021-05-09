@@ -60,7 +60,7 @@ If you wish to migrate any content changes you have made in local to test or pro
 
 ### How to simultaneously work on pages
 
-As we cannot upload the databse onto the repo, this raises some issues if mutiple people are doing seperate pages. If you import someone elses database, it will overwrite all your changes. Here is how to get around that.
+As we cannot upload the database onto the repo, this raises some issues if mutiple people are doing seperate pages. If you import someone elses database, it will overwrite all your changes. Here is how to get around that.
 
 Do the following steps prior to importing a different database if you have changes you wish to keep.
 
