@@ -100,6 +100,12 @@ if ( ! function_exists( 'jazzclubteam01_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		//Add theme support for custom logo
+        add_theme_support('custom-logo', array(
+            'width' => 90,
+            'height'=> 90,
+        ));
 	}
 endif;
 add_action( 'after_setup_theme', 'jazzclubteam01_setup' );
