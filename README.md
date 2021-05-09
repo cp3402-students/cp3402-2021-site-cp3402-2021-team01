@@ -57,3 +57,23 @@ If you wish to migrate any content changes you have made in local to test or pro
 8. The plugin will now begin importing the database. Do not navigate away from the page until it is done.
 
 9. Once import is complete, confirm all content has imported successfully.
+
+### How to simultaneously work on pages
+
+As we cannot upload the databse onto the repo, this raises some issues if mutiple people are doing seperate pages. If you import someone elses database, it will overwrite all your changes. Here is how to get around that.
+
+Do the following steps prior to importing a different database if you have changes you wish to keep.
+
+1. Select 'Tools' in the left tool on wp-admin, from there select 'Export'.
+
+2. Select 'All Content' and select 'Download Export File'.
+
+3. Import the new database using the steps in All-In-One WP Migration.
+
+4. Select 'Import' in the 'Tools' section on wp-admin.
+
+5. Select 'Run Importer' underneath the WordPress section.
+
+6. Select 'Choose File' and select the export file you downloaded in step 2.
+
+7. Confirm your files are still present.
