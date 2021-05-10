@@ -50,7 +50,7 @@ if ( ! function_exists( 'jazzclubteam01_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'jazzclubteam01' ),
+				'primary' => esc_html__( 'Header', 'jazzclubteam01' ),
 			)
 		);
 
@@ -152,7 +152,11 @@ function jazzclubteam01_scripts() {
 	wp_enqueue_style( 'jazzclubteam01-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'jazzclubteam01-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'jazzclubteam01-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'jazzclubteam01-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), _S_VERSION, true );
+	wp_localize_script('jazzclubteam01-navigation', 'jazzclubteam01ScreenReaderText', array(
+	    'expand'=>__('Expand child menu', 'jazzclubteam01'),
+        'collapse'=>__('Collapse child menu', 'jazzclubteam01'),
+    ));
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
