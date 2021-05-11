@@ -1042,8 +1042,9 @@ button.dropdown-toggle {
   }
   .main-navigation ul ul {
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.1);
+    background: #002254;
     margin-left: 0;
+    margin-top: 10px;
   }
   .main-navigation ul ul li {
     padding-left: 0;
