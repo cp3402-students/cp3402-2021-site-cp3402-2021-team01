@@ -80,6 +80,12 @@ body {
 main {
   display: block;
 }
+@media screen and (min-width: 900px) {
+  main {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -459,6 +465,9 @@ big {
 --------------------------------------------- */
 body {
   background: #fff;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
 }
 
 hr {
@@ -914,6 +923,8 @@ textarea {
   .site-header {
     display: flex;
     justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .site-branding {
@@ -1058,6 +1069,33 @@ button.dropdown-toggle {
     */
   }
 }
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin-top: auto;
+  padding: 1em;
+  font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
+  color: #fff;
+  background-color: #002254;
+}
+@media screen and (min-width: 600px) {
+  .site-footer {
+    padding: 1em 2em;
+  }
+}
+@media screen and (min-width: 900px) {
+  .site-footer {
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

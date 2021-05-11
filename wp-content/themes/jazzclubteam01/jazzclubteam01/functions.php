@@ -47,10 +47,11 @@ if ( ! function_exists( 'jazzclubteam01_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
+		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
 				'primary' => esc_html__( 'Header', 'jazzclubteam01' ),
+                'secondary' => esc_html__( 'Footer', 'jazzclubteam01' )
 			)
 		);
 
