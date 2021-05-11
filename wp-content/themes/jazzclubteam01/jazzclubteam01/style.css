@@ -1092,6 +1092,134 @@ button.dropdown-toggle {
   }
 }
 
+.secondary-navigation {
+  position: relative;
+  display: block;
+  font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.secondary-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-top: 1em;
+  padding-left: 0;
+  text-align: right;
+}
+.secondary-navigation ul ul {
+  display: none;
+  top: 1.5em;
+  z-index: 99999;
+}
+.secondary-navigation ul ul ul {
+  top: 0;
+}
+.secondary-navigation ul ul li {
+  padding-left: 1em;
+}
+.secondary-navigation ul ul li:hover > ul, .secondary-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+.secondary-navigation ul ul a {
+  width: 200px;
+}
+.secondary-navigation ul li:hover > ul,
+.secondary-navigation ul li.focus > ul {
+  left: auto;
+}
+.secondary-navigation li {
+  position: relative;
+}
+.secondary-navigation a {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5em 1em 0.5em 0;
+  text-decoration: none;
+  color: #fff;
+}
+.secondary-navigation a:hover,
+.secondary-navigation a:focus {
+  text-decoration: underline;
+}
+.secondary-navigation .menu-item-has-children,
+.secondary-navigation .page_item_has_children {
+  min-width: 218px;
+}
+.secondary-navigation .menu-item-has-children > a,
+.secondary-navigation .page_item_has_children > a {
+  padding-right: 2em;
+}
+
+button.dropdown-toggle {
+  position: absolute;
+  right: 0;
+  border: none;
+  background: inherit;
+  color: white;
+  line-height: 1.5em;
+  padding: 0.4em 1em 0.4em 0.5em;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 1.2em 1.2em 0 0;
+  padding: 0.6em 0.8em;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Toggle small menu and children on */
+.toggled-on ul,
+.sub-menu.toggled-on {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .secondary-navigation .menu-item-has-children > a,
+.secondary-navigation .page_item_has_children > a {
+    padding-right: 2em;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .secondary-navigation ul {
+    display: block;
+  }
+  .secondary-navigation ul ul {
+    flex-direction: column;
+    background: #002254;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .secondary-navigation ul ul li {
+    padding-left: 0;
+  }
+  .secondary-navigation ul ul li a {
+    width: 218px;
+    background: none;
+  }
+  .secondary-navigation ul li a {
+    padding: 0.4em 1em;
+  }
+}
+@media screen and (min-width: 900px) {
+  .secondary-navigation {
+    width: 25%;
+  }
+  .secondary-navigation ul {
+    justify-content: right;
+    padding-top: 0;
+  }
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
