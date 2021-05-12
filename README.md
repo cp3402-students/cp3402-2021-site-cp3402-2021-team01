@@ -64,16 +64,16 @@ As we cannot upload the database onto the repo, this raises some issues if mutip
 
 Do the following steps prior to importing a different database if you have changes you wish to keep.
 
-1. Select 'Tools' in the left tool on wp-admin, from there select 'Export'.
+1. Select `Tools` in the left tool on wp-admin, from there select 'Export'.
 
-2. Select 'All Content' and select 'Download Export File'.
+2. Select `All Content` and select 'Download Export File'.
 
 3. Import the new database using the steps in All-In-One WP Migration.
 
-4. Select 'Import' in the 'Tools' section on wp-admin.
+4. Select `Import` in the `Tools` section on wp-admin.
 
-5. Select 'Run Importer' underneath the WordPress section.
+5. Select `Run Importer` underneath the WordPress section.
 
-6. Select 'Choose File' and select the export file you downloaded in step 2.
+6. Select `Choose File` and select the export file you downloaded in step 2.
 
 7. Confirm your files are still present.
