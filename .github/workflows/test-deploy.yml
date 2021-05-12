@@ -11,9 +11,9 @@ jobs:
     - name: Executing commands via ssh
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }} 13.59.80.168
-        port: ${{ secrets.PORT }} 22
-        username: ${{ secrets.USERNAME }} ubuntu
+        host: ${{ secrets.HOST }}
+        port: ${{ secrets.PORT }}
+        username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         script: |
           cd var/www/html
