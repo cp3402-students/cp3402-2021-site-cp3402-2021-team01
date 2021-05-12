@@ -1,0 +1,20 @@
+name: Test deploy
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  ssh:
+    name: SSH into test EC2 Instance
+    runs-on: ubuntu-latest
+    steps:
+    - name: Executing git commands
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.TEST_HOST }}
+        port: ${{ secrets.PORT }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        script: |
+          cd /var/www/html
+          git pull origin develop

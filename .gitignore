@@ -1,6 +1,9 @@
-.idea
-*.iml
-db
+/*
+/*/
+!.gitignore
+!.github
+!/wp-content/
+!CONTRIBUTORS.md
+!README.md
+!docker-compose.yml
 
-wordpress/*
-!wordpress/wp-content
