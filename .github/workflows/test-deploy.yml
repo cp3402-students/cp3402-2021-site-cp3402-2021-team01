@@ -1,0 +1,20 @@
+name: Test deploy
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  ssh:
+    name: Test SSH
+    runs-on: ubuntu-latest
+    steps:
+    - name: Executing commands via ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }} 13.59.80.168
+        port: ${{ secrets.PORT }} 22
+        username: ${{ secrets.USERNAME }} ubuntu
+        key: ${{ secrets.KEY }}
+        script: |
+          cd var/www/html
+          git pull origin develop
