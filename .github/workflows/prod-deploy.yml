@@ -2,7 +2,7 @@ name: Test deploy
 on:
   push:
     branches:
-      - develop
+      - main
 jobs:
   ssh:
     name: SSH into test EC2 Instance
@@ -11,7 +11,7 @@ jobs:
     - name: Executing git commands
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.TEST_HOST }}
+        host: ${{ secrets.PROD_HOST }}
         port: ${{ secrets.PORT }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
