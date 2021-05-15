@@ -12,6 +12,28 @@
 ?>
 
 <footer id="colophon" class="site-footer">
+
+   <div class="contact-info">
+      <!--      <ul>-->
+      <!--         <li>Phone: 0431 618 618</li>-->
+      <!--         <li>Email: townsvillejazz@icloud.com</li>-->
+      <!--         <li>Address: 54 Howitt St, Townsville, QLD, 4810</li>-->
+      <!--      </ul>-->
+      <table>
+         <tr>
+            <td>Phone:</td>
+            <td>0431 618 618</td>
+         </tr>
+         <tr>
+            <td>Email:</td>
+            <td>townsvillejazz@icloud.com</td>
+         </tr>
+         <tr>
+            <td>Address:</td>
+            <td>54 Howitt St, Townsville, QLD, 4810</td>
+         </tr>
+      </table>
+   </div>
    <nav id="secondary-navigation" class="secondary-navigation">
       <button class="menu-toggle" aria-controls="primary-menu"
               aria-expanded="false"><?php esc_html_e('Secondary Menu', 'jazzclubteam01'); ?></button>

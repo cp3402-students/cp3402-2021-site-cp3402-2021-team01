@@ -2,8 +2,9 @@
   position: relative;
   display: block;
   font-family: $font__sans;
+  color: #999999;
   font-size: 12px;
-  margin-right: 0;
+  margin-right: 2em;
   margin-left: auto;
 
   ul {
@@ -52,7 +53,7 @@
     width: 100%;
     padding: .5em 1em .5em 0;
     text-decoration: none;
-    color: #fff;
+    color: #999999;;
   }
 
   a:hover,
@@ -60,50 +61,7 @@
     text-decoration: underline;
   }
 
-  .current_page_item > a,
-  .current-menu-item > a,
-  .current_page_ancestor > a,
-  .current-menu-ancestor > a {
-  }
 
-  .menu-item-has-children,
-  .page_item_has_children {
-    min-width: 218px;
-  }
-
-  .menu-item-has-children > a,
-  .page_item_has_children > a {
-    padding-right: 2em;
-  }
-}
-
-button.dropdown-toggle {
-  position: absolute;
-  right: 0;
-  border: none;
-  background: inherit;
-  color: white;
-  line-height: 1.5em;
-  padding: .4em 1em .4em .5em;
-}
-
-.menu-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  margin: 1.2em 1.2em 0 0;
-  padding: .6em .8em;
-  font-size: 80%;
-  text-transform: uppercase;
-  color: white;
-  border: 1px solid hsla(0, 0%, 100%, .3);
-}
-
-/* Toggle small menu and children on */
-.toggled-on ul,
-.sub-menu.toggled-on {
-  display: block;
 }
 
 @media screen and (min-width: $query__small) {
@@ -112,12 +70,6 @@ button.dropdown-toggle {
   }
 
   .secondary-navigation {
-
-    .menu-item-has-children > a,
-    .page_item_has_children > a {
-      padding-right: 2em;
-      background: hsla(0, 0%, 100%, .1);
-    }
 
     ul {
       display: block;
@@ -154,9 +106,10 @@ button.dropdown-toggle {
   .secondary-navigation {
     width: 25%;
 
+
     ul {
       justify-content: right;
-      padding-top: 0;
+      padding: 0 1em 0 0;
 
     }
 

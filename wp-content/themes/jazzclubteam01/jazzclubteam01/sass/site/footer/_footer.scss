@@ -2,11 +2,10 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 150px;
   margin-top: auto;
-  padding: 1em;
+
   font-family: $font__sans;
-  color: #fff;
   background-color: $color__skin;
 
   @media screen and (min-width: $query__small) {
@@ -19,6 +18,23 @@
     padding-left: 15%;
     padding-right: 15%;
   }
+}
+
+.contact-info {
+  margin-left: 2em;
+  position: relative;
+  display: block;
+  font-family: $font__sans;
+  color: #999999;
+  font-size: 12px;
+  float: left;
+
+  table {
+    border: none;
+    text-align: left;
+    border-spacing: 0.4em;
+  }
+
 }
 
 // Import footer menu
