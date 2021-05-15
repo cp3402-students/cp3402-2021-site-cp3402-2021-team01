@@ -1,0 +1,117 @@
+.secondary-navigation {
+  position: relative;
+  display: block;
+  font-family: $font__sans;
+  color: #999999;
+  font-size: 12px;
+  margin-right: 2em;
+  margin-left: auto;
+
+  ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-top: 1em;
+    padding-left: 0;
+    text-align: right;
+
+    ul {
+      display: none;
+      top: 1.5em;
+      z-index: 99999;
+
+      ul {
+        top: 0;
+      }
+
+      li {
+        padding-left: 1em;
+
+        &:hover > ul,
+        &.focus > ul {
+          left: 100%;
+        }
+      }
+
+      a {
+        width: 200px;
+      }
+    }
+
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+    }
+  }
+
+  li {
+    position: relative;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: .5em 1em .5em 0;
+    text-decoration: none;
+    color: #999999;;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+
+}
+
+@media screen and (min-width: $query__small) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .secondary-navigation {
+
+    ul {
+      display: block;
+
+      ul {
+        flex-direction: column;
+        background: #002254;
+        margin-left: 0;
+        margin-top: 10px;
+
+        li {
+          padding-left: 0;
+
+          a {
+            width: 218px;
+            background: none;
+          }
+        }
+      }
+
+      li {
+
+        a {
+          padding: .4em 1em;
+        }
+      }
+    }
+
+  }
+
+}
+
+@media screen and (min-width: $query__medium) {
+  .secondary-navigation {
+    width: 25%;
+
+
+    ul {
+      justify-content: right;
+      padding: 0 1em 0 0;
+
+    }
+
+  }
+}
