@@ -3,7 +3,7 @@
 !.gitignore
 !.github
 !/wp-content/
-!CONTRIBUTORS.md
+!CONTRIBUTING.md
 !README.md
 !docker-compose.yml
 !DEPLOYMENT.md
