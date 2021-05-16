@@ -29,14 +29,17 @@ Both our test and production websites are running on a virtual environments host
 **TEST HOST** - http://ec2-13-59-80-168.us-east-2.compute.amazonaws.com/  
 **PRODUCTION HOST** - http://ec2-3-143-210-183.us-east-2.compute.amazonaws.com/
 
-## Repo Changes
+## Git and GitHub
 
-Our Repo only tracks the wp-content folder in wordpress. Any changes made to it locally need to be pushed up to a new branch. From there it will need the approval of one other team member before it can be merged with develop.
-Once the branch is merged with develop, a Github action will run to automatically push the changes to test.
+To prevent tracking core wordpress files, our repository only tracks the wp-content folder in wordpress. When making changes locally, you are expected to be in a new branch (with a meaningful branch name e.g. `feature/add-footer`, `bug/fix-typography`, `hotfix/fix-critical-thing`) before making changes and eventually pushing to GitHub. You are then expected to create a pull request from your new branch into `develop`. Ensure that the pull request template is filled out in as much depth as possible and request a code review from atleast one other repository member. Once your pull request has been approved, please `Squash & merge` (this will keep our commit history clean), then once merged, delete your branch from GitHub.
 
-You can then review the changes on test and if you are satisifed with them, you can then merge the changes to main.
+### GitHub Actions
 
-You should see a pull request created automatically when there is a difference between main and develop. If you are ready to make the change, approve the pull request and merge the branches. Once approved, another github action will run to automatically pull the changes to the production server.
+- __Create / update pull request:__ This action triggers on push to develop (once a pull request is merged), that will create or update an existing draft pull request from `develop` into `main`. Generally you will want to merge review, approve and merge this pull request when you have tested your changes on the test environment.
+
+- __Test deploy:__ This action triggers on push to develop (once the pull request is merged), this will then automatically put the latest version of wp-content onto the test EC2 instance.
+
+- __Prod deploy:__ This action triggers on push to main (once the pull request is merged), this will then automatically put the latest version of wp-content onto the prod EC2 instance.
 
 ## All-In-One WP Migration
 If you wish to migrate any content changes you have made in local to test or prod, follow the steps below.
