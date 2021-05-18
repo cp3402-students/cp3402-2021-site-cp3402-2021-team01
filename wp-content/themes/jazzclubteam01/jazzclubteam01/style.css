@@ -949,7 +949,7 @@ Header Menu
   left: 100%;
 }
 .main-navigation ul ul a {
-  width: 200px;
+  width: 150px;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
@@ -971,7 +971,7 @@ Header Menu
 }
 .main-navigation .menu-item-has-children,
 .main-navigation .page_item_has_children {
-  min-width: 218px;
+  min-width: 150px;
 }
 .main-navigation .menu-item-has-children > a,
 .main-navigation .page_item_has_children > a {
@@ -1030,7 +1030,7 @@ button.dropdown-toggle {
     padding-left: 0;
   }
   .main-navigation ul ul li a {
-    width: 218px;
+    width: 150px;
     background: none;
   }
   .main-navigation ul li a {

@@ -30,7 +30,7 @@
       }
 
       a {
-        width: 200px;
+        width: 150px;
       }
     }
 
@@ -65,7 +65,7 @@
 
   .menu-item-has-children,
   .page_item_has_children {
-    min-width: 218px;
+    min-width: 150px;
   }
 
   .menu-item-has-children > a,
@@ -129,9 +129,9 @@ button.dropdown-toggle {
           padding-left: 0;
 
           a {
-            width: 218px;
+            width: 150px;
             background: none;
-          }
+                      }
         }
       }
 
