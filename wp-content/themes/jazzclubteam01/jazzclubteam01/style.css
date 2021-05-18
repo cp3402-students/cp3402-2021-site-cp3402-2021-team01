@@ -477,11 +477,6 @@ hr {
   margin-bottom: 1.5em;
 }
 
-ul,
-ol {
-  margin: 0 0 1.5em 3em;
-}
-
 ul {
   list-style: disc;
 }
@@ -636,7 +631,6 @@ textarea {
 .main-navigation ul {
   display: none;
   list-style: none;
-  margin: 0;
   padding-left: 0;
 }
 .main-navigation ul ul {
@@ -881,7 +875,7 @@ textarea {
 }
 .custom-logo-link img {
   display: block;
-  height: 65px;
+  height: auto;
   width: auto;
 }
 
@@ -893,11 +887,9 @@ textarea {
 }
 
 .site-title {
-  margin: 0;
   padding: 0;
   font-size: 1.6em;
   font-weight: 900;
-  line-height: 1em;
 }
 .site-title a {
   color: white;
@@ -943,17 +935,12 @@ Header Menu
 .main-navigation ul {
   display: none;
   list-style: none;
-  margin: 0;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-left: 0;
 }
 .main-navigation ul ul {
   display: none;
-  top: 1.5em;
   z-index: 99999;
-}
-.main-navigation ul ul ul {
-  top: 0;
 }
 .main-navigation ul ul li {
   padding-left: 1em;
@@ -1031,7 +1018,6 @@ button.dropdown-toggle {
     background: rgba(255, 255, 255, 0.1);
   }
   .main-navigation ul {
-    display: block;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1039,7 +1025,6 @@ button.dropdown-toggle {
     flex-direction: column;
     background: #1a3965;
     margin-left: 0;
-    margin-top: 10px;
   }
   .main-navigation ul ul li {
     padding-left: 0;
@@ -1055,12 +1040,11 @@ button.dropdown-toggle {
 @media screen and (min-width: 900px) {
   .main-navigation ul {
     justify-content: flex-end;
-    padding-top: 0;
     /* If you want dropdowns to open on hover, uncomment this: */
     /*
     li:hover > ul,
-    	li:focus > ul {
-    	display: block;
+        li:focus > ul {
+        display: block;
     }
     */
   }
