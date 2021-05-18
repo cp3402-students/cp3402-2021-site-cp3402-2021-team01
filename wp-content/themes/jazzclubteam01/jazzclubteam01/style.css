@@ -998,6 +998,8 @@ button.dropdown-toggle {
   font-size: 80%;
   text-transform: uppercase;
   color: white;
+  background: #0a4b78;
+  font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
