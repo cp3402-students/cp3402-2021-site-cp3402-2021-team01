@@ -1,171 +1,169 @@
 .main-navigation {
-	display: block;
+  display: block;
 
-	font-family: $font__sans;
-	font-weight: 400;
-	clear: left;
+  font-family: $font__sans;
+  font-weight: 400;
+  clear: left;
 
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-top: 1em;
-		padding-left: 0;
+  ul {
+    display: none;
+    list-style: none;
 
-		ul {
-			display: none;
-			top: 1.5em;
-			z-index: 99999;
+    padding-top: 0.5em;
+    padding-left: 0;
 
-			ul {
-				top: 0;
-			}
+    ul {
+      display: none;
 
-			li {
-				padding-left: 1em;
+      z-index: 99999;
 
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
+      ul {
+      }
 
-			a {
-				width: 200px;
-			}
-		}
+      li {
+        padding-left: 1em;
 
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
+        &:hover > ul,
+        &.focus > ul {
+          left: 100%;
+        }
+      }
 
-	li {
-		position: relative;
-	}
+      a {
+        width: 150px;
+      }
+    }
 
-	a {
-		display: inline-block;
-		width: 100%;
-		padding: .5em 1em .5em 0;
-		text-decoration: none;
-		color: #fff;
-	}
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+    }
+  }
 
-	a:hover,
-	a:focus {
-		text-decoration: underline;
-	}
+  li {
+    position: relative;
+  }
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: .5em 1em .5em 0;
+    text-decoration: none;
+    color: #fff;
+  }
 
-	.menu-item-has-children,
-	.page_item_has_children {
-		min-width: 218px;
-	}
-	.menu-item-has-children > a,
-	.page_item_has_children > a {
-		padding-right: 2em;
-	}
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a,
+  .current-menu-ancestor > a {
+  }
+
+  .menu-item-has-children,
+  .page_item_has_children {
+    min-width: 150px;
+  }
+
+  .menu-item-has-children > a,
+  .page_item_has_children > a {
+    padding-right: 2em;
+  }
 }
 
 button.dropdown-toggle {
-	position: absolute;
-	right: 0;
-	border: none;
-	background: inherit;
-	color: white;
-	line-height: 1.5em;
-	padding: .4em 1em .4em .5em;
+  position: absolute;
+  right: 0;
+  border: none;
+  background: inherit;
+  color: white;
+  line-height: 1.5em;
+  padding: .4em 1em .4em .5em;
 }
 
 .menu-toggle {
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: block;
-	margin: 1.2em 1.2em 0 0;
-	padding: .6em .8em;
-	font-size: 80%;
-	text-transform: uppercase;
-	color: white;
-	background: #0a4b78;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 1.2em 1.2em 0 0;
+  padding: .6em .8em;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: white;
+  background: #0a4b78;
 	font-family: $font__sans;
-	border: 1px solid hsla(0, 0%, 100%, .3);
+  border: 1px solid hsla(0, 0%, 100%, .3);
+
 }
 
 /* Toggle small menu and children on */
 .toggled-on ul,
 .sub-menu.toggled-on {
-	display: block;
+  display: block;
 }
 
 @media screen and (min-width: $query__small) {
-	.menu-toggle {
-		display: none;
-	}
+  .menu-toggle {
+    display: none;
+  }
 
-	.main-navigation {
+  .main-navigation {
 
-		.menu-item-has-children > a,
-		.page_item_has_children > a {
-			padding-right: 2em;
-			background: hsla(0, 0%, 100%, .1);
-		}
+    .menu-item-has-children > a,
+    .page_item_has_children > a {
+      padding-right: 2em;
+      background: hsla(0, 0%, 100%, .1);
+    }
 
-		ul {
-			display: block;
-			display: flex;
-			flex-wrap: wrap;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
 
-			ul {
-				flex-direction: column;
-				background: rgba(26, 57, 101, 1);
-				margin-left: 0;
-				margin-top: 10px;
+      ul {
+        flex-direction: column;
+        background: rgba(26, 57, 101, 1);
+        margin-left: 0;
 
-				li {
-					padding-left: 0;
+        li {
+          padding-left: 0;
 
-					a {
-						width: 218px;
-						background: none;
-					}
-				}
-			}
+          a {
+            width: 150px;
+            background: none;
+                      }
+        }
+      }
 
-			li {
+      li {
 
-				a {
-					padding: .4em 1em;
-				}
-			}
-		}
+        a {
+          padding: .4em 1em;
+        }
+      }
+    }
 
-	}
+  }
 
 }
 
 @media screen and (min-width: $query__medium) {
-	.main-navigation {
+  .main-navigation {
 
-		ul {
-			justify-content: flex-end;
-			padding-top: 0;
+    ul {
+      justify-content: flex-end;
 
-			/* If you want dropdowns to open on hover, uncomment this: */
-			/*
-			li:hover > ul,
-				li:focus > ul {
-				display: block;
-			}
-			*/
-		}
+      /* If you want dropdowns to open on hover, uncomment this: */
+      /*
+      li:hover > ul,
+          li:focus > ul {
+          display: block;
+      }
+      */
+    }
 
-	}
+  }
 }
