@@ -870,7 +870,7 @@ textarea {
   padding: 1em;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
   color: #fff;
-  background-color: #002254;
+  background-color: #654321;
 }
 @media screen and (min-width: 600px) {
   .site-header {
@@ -1076,7 +1076,7 @@ button.dropdown-toggle {
   height: 150px;
   margin-top: auto;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
-  background-color: #002254;
+  background-color: #654321;
 }
 @media screen and (min-width: 600px) {
   .site-footer {
