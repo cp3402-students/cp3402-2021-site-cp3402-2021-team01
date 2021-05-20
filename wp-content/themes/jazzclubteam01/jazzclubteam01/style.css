@@ -552,7 +552,7 @@ input[type=submit] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: #e6e6e6;
+  background: #04AA6D;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
@@ -571,6 +571,10 @@ input[type=reset]:focus,
 input[type=submit]:active,
 input[type=submit]:focus {
   border-color: #aaa #bbb #bbb;
+}
+
+.wp-block-button__link {
+  background-color: #04AA6D;
 }
 
 input[type=text],
@@ -866,7 +870,7 @@ textarea {
   padding: 1em;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
   color: #fff;
-  background-color: #002254;
+  background-color: #542e00;
 }
 @media screen and (min-width: 600px) {
   .site-header {
@@ -1072,7 +1076,7 @@ button.dropdown-toggle {
   height: 150px;
   margin-top: auto;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
-  background-color: #002254;
+  background-color: #542e00;
 }
 @media screen and (min-width: 600px) {
   .site-footer {
