@@ -394,7 +394,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: "PT Serif", Georgia, Cambriam, serif;
+  font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -461,6 +461,11 @@ big {
   font-size: 125%;
 }
 
+.image-caption {
+  font-size: 12px;
+  margin-top: 0;
+}
+
 /* Elements
 --------------------------------------------- */
 body {
@@ -475,11 +480,6 @@ hr {
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
-}
-
-ul,
-ol {
-  margin: 0 0 1.5em 3em;
 }
 
 ul {
@@ -552,7 +552,7 @@ input[type=submit] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: #e6e6e6;
+  background: #04AA6D;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
@@ -571,6 +571,10 @@ input[type=reset]:focus,
 input[type=submit]:active,
 input[type=submit]:focus {
   border-color: #aaa #bbb #bbb;
+}
+
+.wp-block-button__link {
+  background-color: #04AA6D;
 }
 
 input[type=text],
@@ -636,7 +640,6 @@ textarea {
 .main-navigation ul {
   display: none;
   list-style: none;
-  margin: 0;
   padding-left: 0;
 }
 .main-navigation ul ul {
@@ -725,6 +728,10 @@ textarea {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.home-page-column {
+  margin-bottom: 0;
 }
 
 /* Comments
@@ -863,7 +870,7 @@ textarea {
   padding: 1em;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
   color: #fff;
-  background-color: #002254;
+  background-color: #542e00;
 }
 @media screen and (min-width: 600px) {
   .site-header {
@@ -881,7 +888,7 @@ textarea {
 }
 .custom-logo-link img {
   display: block;
-  height: 65px;
+  height: auto;
   width: auto;
 }
 
@@ -893,11 +900,9 @@ textarea {
 }
 
 .site-title {
-  margin: 0;
   padding: 0;
   font-size: 1.6em;
   font-weight: 900;
-  line-height: 1em;
 }
 .site-title a {
   color: white;
@@ -943,17 +948,12 @@ Header Menu
 .main-navigation ul {
   display: none;
   list-style: none;
-  margin: 0;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-left: 0;
 }
 .main-navigation ul ul {
   display: none;
-  top: 1.5em;
   z-index: 99999;
-}
-.main-navigation ul ul ul {
-  top: 0;
 }
 .main-navigation ul ul li {
   padding-left: 1em;
@@ -962,7 +962,7 @@ Header Menu
   left: 100%;
 }
 .main-navigation ul ul a {
-  width: 200px;
+  width: 150px;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
@@ -984,7 +984,7 @@ Header Menu
 }
 .main-navigation .menu-item-has-children,
 .main-navigation .page_item_has_children {
-  min-width: 218px;
+  min-width: 150px;
 }
 .main-navigation .menu-item-has-children > a,
 .main-navigation .page_item_has_children > a {
@@ -1011,6 +1011,8 @@ button.dropdown-toggle {
   font-size: 80%;
   text-transform: uppercase;
   color: white;
+  background: #0a4b78;
+  font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -1031,7 +1033,6 @@ button.dropdown-toggle {
     background: rgba(255, 255, 255, 0.1);
   }
   .main-navigation ul {
-    display: block;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1039,13 +1040,12 @@ button.dropdown-toggle {
     flex-direction: column;
     background: #1a3965;
     margin-left: 0;
-    margin-top: 10px;
   }
   .main-navigation ul ul li {
     padding-left: 0;
   }
   .main-navigation ul ul li a {
-    width: 218px;
+    width: 150px;
     background: none;
   }
   .main-navigation ul li a {
@@ -1055,12 +1055,11 @@ button.dropdown-toggle {
 @media screen and (min-width: 900px) {
   .main-navigation ul {
     justify-content: flex-end;
-    padding-top: 0;
     /* If you want dropdowns to open on hover, uncomment this: */
     /*
     li:hover > ul,
-    	li:focus > ul {
-    	display: block;
+        li:focus > ul {
+        display: block;
     }
     */
   }
@@ -1069,13 +1068,15 @@ button.dropdown-toggle {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 150px;
   margin-top: auto;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
-  background-color: #002254;
+  background-color: #542e00;
 }
 @media screen and (min-width: 600px) {
   .site-footer {
@@ -1084,6 +1085,7 @@ button.dropdown-toggle {
 }
 @media screen and (min-width: 900px) {
   .site-footer {
+    display: flex;
     justify-content: space-between;
     padding-left: 15%;
     padding-right: 15%;
@@ -1093,7 +1095,7 @@ button.dropdown-toggle {
 .contact-info {
   margin-left: 2em;
   position: relative;
-  display: block;
+  display: inline-block;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
   color: #999999;
   font-size: 12px;
@@ -1105,6 +1107,17 @@ button.dropdown-toggle {
   border-spacing: 0.4em;
 }
 
+.website-info {
+  margin-left: 2em;
+  position: relative;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
+  color: #999999;
+  font-size: 12px;
+  float: left;
+  justify-content: center;
+}
+
 .secondary-navigation {
   position: relative;
   display: block;
@@ -1112,7 +1125,6 @@ button.dropdown-toggle {
   color: #999999;
   font-size: 12px;
   margin-right: 2em;
-  margin-left: auto;
 }
 .secondary-navigation ul {
   display: none;
@@ -1185,7 +1197,7 @@ button.dropdown-toggle {
 }
 @media screen and (min-width: 900px) {
   .secondary-navigation {
-    width: 25%;
+    width: 20%;
   }
   .secondary-navigation ul {
     justify-content: right;
