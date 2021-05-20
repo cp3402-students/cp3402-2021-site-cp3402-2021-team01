@@ -394,7 +394,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: "PT Serif", Georgia, Cambriam, serif;
+  font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -459,6 +459,11 @@ ins {
 
 big {
   font-size: 125%;
+}
+
+.image-caption {
+  font-size: 12px;
+  margin-top: 0;
 }
 
 /* Elements
@@ -719,6 +724,10 @@ textarea {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.home-page-column {
+  margin-bottom: 0;
 }
 
 /* Comments
