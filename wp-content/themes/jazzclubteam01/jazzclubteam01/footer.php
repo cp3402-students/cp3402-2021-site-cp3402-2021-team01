@@ -34,6 +34,12 @@
          </tr>
       </table>
    </div>
+
+   <div class="website-info">
+      <p>Townsville Jazz Club. All Rights Reserved &#169;</p>
+      </a>
+   </div>
+
    <nav id="secondary-navigation" class="secondary-navigation">
       <button class="menu-toggle" aria-controls="primary-menu"
               aria-expanded="false"><?php esc_html_e('Secondary Menu', 'jazzclubteam01'); ?></button>
@@ -46,11 +52,9 @@
        );
        ?>
    </nav>
-   <div class="site-info">
-      <a href="<?php echo esc_url(__('https://wordpress.org/', 'Townsville Jazz Club')); ?>">
-      </a>
 
-   </div><!-- .site-info -->
+
+   <!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
 

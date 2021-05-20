@@ -1,10 +1,11 @@
 .site-footer {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 150px;
   margin-top: auto;
-
   font-family: $font__sans;
   background-color: $color__skin;
 
@@ -13,7 +14,7 @@
   }
 
   @media screen and (min-width: $query__medium) {
-
+    display: flex;
     justify-content: space-between;
     padding-left: 15%;
     padding-right: 15%;
@@ -23,7 +24,7 @@
 .contact-info {
   margin-left: 2em;
   position: relative;
-  display: block;
+  display: inline-block;
   font-family: $font__sans;
   color: #999999;
   font-size: 12px;
@@ -35,6 +36,17 @@
     border-spacing: 0.4em;
   }
 
+}
+
+.website-info {
+  margin-left: 2em;
+  position: relative;
+  display: inline-block;
+  font-family: $font__sans;
+  color: #999999;
+  font-size: 12px;
+  float: left;
+  justify-content: center;
 }
 
 // Import footer menu
