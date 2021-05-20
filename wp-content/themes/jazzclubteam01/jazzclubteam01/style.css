@@ -1064,6 +1064,8 @@ button.dropdown-toggle {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -1079,6 +1081,7 @@ button.dropdown-toggle {
 }
 @media screen and (min-width: 900px) {
   .site-footer {
+    display: flex;
     justify-content: space-between;
     padding-left: 15%;
     padding-right: 15%;
@@ -1088,7 +1091,7 @@ button.dropdown-toggle {
 .contact-info {
   margin-left: 2em;
   position: relative;
-  display: block;
+  display: inline-block;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
   color: #999999;
   font-size: 12px;
@@ -1100,6 +1103,17 @@ button.dropdown-toggle {
   border-spacing: 0.4em;
 }
 
+.website-info {
+  margin-left: 2em;
+  position: relative;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
+  color: #999999;
+  font-size: 12px;
+  float: left;
+  justify-content: center;
+}
+
 .secondary-navigation {
   position: relative;
   display: block;
@@ -1107,7 +1121,6 @@ button.dropdown-toggle {
   color: #999999;
   font-size: 12px;
   margin-right: 2em;
-  margin-left: auto;
 }
 .secondary-navigation ul {
   display: none;
@@ -1180,7 +1193,7 @@ button.dropdown-toggle {
 }
 @media screen and (min-width: 900px) {
   .secondary-navigation {
-    width: 25%;
+    width: 20%;
   }
   .secondary-navigation ul {
     justify-content: right;
