@@ -23,3 +23,5 @@ After this has been successfully completed the developer can then place the prov
 This plugin is used to display events in a calender on the events page. <br>
 To add to the events page one must access the backend of the website and navigate to the events plug in. From there adding a new event is as simple as pressing “add event” and filling out the information as necessary from there. 
 <br><br>
+<h1>General Chanages</h1>
+If someone is waning to make genral changes to the website such as wording or image content changes, they can go the the Pages tab in the backend of the Wordpress site and choose they page they would like to to edit. Once in there they can use the built in WP page builder to change the content. When completed they with then have to push the changes to the github repo to automatically merge with the Test and Production Servers and import the database content to the Servers as well.
