@@ -1097,7 +1097,7 @@ button.dropdown-toggle {
   position: relative;
   display: inline-block;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
-  color: #999999;
+  color: #fff;
   font-size: 12px;
   float: left;
 }
@@ -1112,7 +1112,7 @@ button.dropdown-toggle {
   position: relative;
   display: inline-block;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
-  color: #999999;
+  color: #fff;
   font-size: 12px;
   float: left;
   justify-content: center;
@@ -1122,7 +1122,7 @@ button.dropdown-toggle {
   position: relative;
   display: block;
   font-family: "Source Sans Pro", sans-serif, "Lucida Grande", "Lucida Sans Unicode";
-  color: #999999;
+  color: #fff;
   font-size: 12px;
   margin-right: 2em;
 }
@@ -1163,7 +1163,7 @@ button.dropdown-toggle {
   width: 100%;
   padding: 0.5em 1em 0.5em 0;
   text-decoration: none;
-  color: #999999;
+  color: #fff;
 }
 .secondary-navigation a:hover,
 .secondary-navigation a:focus {

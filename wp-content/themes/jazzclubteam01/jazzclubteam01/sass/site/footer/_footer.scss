@@ -26,7 +26,7 @@
   position: relative;
   display: inline-block;
   font-family: $font__sans;
-  color: #999999;
+  color: $color__text-footer;
   font-size: 12px;
   float: left;
 
@@ -43,7 +43,7 @@
   position: relative;
   display: inline-block;
   font-family: $font__sans;
-  color: #999999;
+  color: $color__text-footer;
   font-size: 12px;
   float: left;
   justify-content: center;
