@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   font-family: $font__sans;
-  color: #999999;
+  color: $color__text-footer;
   font-size: 12px;
   margin-right: 2em;
 
@@ -52,7 +52,7 @@
     width: 100%;
     padding: .5em 1em .5em 0;
     text-decoration: none;
-    color: #999999;;
+    color: $color__text-footer;
   }
 
   a:hover,
