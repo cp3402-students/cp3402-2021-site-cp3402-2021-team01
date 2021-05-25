@@ -41,8 +41,6 @@
    </div>
 
    <nav id="secondary-navigation" class="secondary-navigation">
-      <button class="menu-toggle" aria-controls="primary-menu"
-              aria-expanded="false"><?php esc_html_e('Secondary Menu', 'jazzclubteam01'); ?></button>
        <?php
        wp_nav_menu(
            array(
